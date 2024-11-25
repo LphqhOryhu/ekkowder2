@@ -1,0 +1,68 @@
+ /* Zone principale */
+ body {
+    margin: 0;
+    height: 100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Empêche le scroll global */
+    color: white;
+  }
+
+  /* Zone scrollable */
+  .scroll-container {
+    height: 80vh;
+    width: 80vw;
+    background-color: #000;
+    overflow-y: scroll;
+    border-radius: 10px;
+    position: relative;
+     /*ici*/
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+  /* Contenu scrollable (longueur artificielle) */
+  .scroll-content {
+    height: 200vh;
+     position: relative;
+  }
+
+  /* Image animée */
+  .sticky-image {
+    position: sticky;
+    top: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sticky-image img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* Flèche */
+  .scroll-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    font-size: 24px;
+    transition: background-color 0.3s;
+  }
+
+  .scroll-arrow:hover {
+    background-color: #666;
+  }
