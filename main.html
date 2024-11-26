@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<!-- https://www.youtube.com/watch?v=jP7aKvWYAvA -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arcane <3</title>
+  <title>Frame Scroll Animation</title>
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Conteneur principal pour le scroll -->
   <div id="scrollContainer" class="scroll-container">
     <div class="scroll-content">
       <div class="sticky-image">
+        <!-- Image dynamique qui change en fonction du scroll -->
         <img id="animationFrame" src="frames/f1.png" alt="Animated frame">
       </div>
     </div>
-    </div>
+  </div>
   
+  <!-- Conteneur pour afficher le numéro de la frame -->
+  <div id="frameCounter">Frame: 1</div>
+
   <script src="script.js"></script>
 </body>
 </html>

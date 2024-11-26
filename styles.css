@@ -66,3 +66,17 @@
   .scroll-arrow:hover {
     background-color: #666;
   }
+
+  .frame-counter {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+  }
+  
